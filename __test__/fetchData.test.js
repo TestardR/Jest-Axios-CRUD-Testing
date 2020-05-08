@@ -1,7 +1,7 @@
-const fetchData = require('../fetchData')
+const { fetchData } = require('../index')
 const mockAxios = require('axios')
 
-it('calls axios and returns a quote', async () => {
+it('calls GET axios and returns a quote', async () => {
     mockAxios.get.mockImplementationOnce(() =>
         Promise.resolve({
             data: {
@@ -16,3 +16,4 @@ it('calls axios and returns a quote', async () => {
     expect(mockAxios.get).toHaveBeenCalledTimes(1)
     expect(mockAxios.get).toHaveBeenCalledWith("https://api.kanye.rest/")
 })
+
