@@ -8,7 +8,7 @@
     "testwatch": "jest --watchAll"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "jest": "^26.0.1"
